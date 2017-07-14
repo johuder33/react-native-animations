@@ -34,7 +34,7 @@ export default class extends Component {
         };
     }
 
-    componentDidMounts(height) {
+    startAnimation(height) {
         const { animation } = this.state;
         
         Animated.timing(animation, {
@@ -75,7 +75,7 @@ export default class extends Component {
                             height
                         });
 
-                        this.componentDidMounts(height);
+                        this.startAnimation(height);
                     }
                 }}
             >

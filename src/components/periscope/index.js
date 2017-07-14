@@ -48,6 +48,7 @@ class Periscope extends Component {
     }
 
     componentWillUnmount() {
+        this.isThisMounted = false;
         if (this.timer) {
             clearTimeout(this.timer);
         }
